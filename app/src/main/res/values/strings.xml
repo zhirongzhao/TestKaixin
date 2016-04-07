@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TestKaixin</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">注册</string>
+    <string name="welcom_All_rights">All rights reserved.Ver.2.8</string>
+    <string name="welcom_Copyright">Copyright © 2007-2013 kaixin001.com</string>
+    <string name="loginin_nm">请输入账号</string>
+    <string name="loginPass">请输入密码</string>
+    <string name="loginLoginBtn">登录</string>
+    <string name="loginActivity_LoginNmNull">请输入用户名！</string>
+    <string name="loginActivity_passWordNull">请输入密码！</string>
+    <string name="loginActivity_successMsg">登录成功</string>
+    <string name="loginActivity_errorMsg">登录失败！！</string>
+    <string name="title_activity_check_number">checkNumberActivity</string>
+    <string name="global_exit">在按一次返回键可直接退出程序</string>
+    <string name="title_activity_guid">GuidActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

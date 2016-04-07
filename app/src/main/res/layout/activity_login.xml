@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.as.testkaixin.view.bs.LoginActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/login_logo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:id="@+id/loginNM"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/login_icon_account"
+            android:drawablePadding="25dp"
+            android:hint="@string/loginin_nm"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/loginPass"
+            android:layout_below="@+id/loginNM"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="25dp"
+            android:drawableLeft="@drawable/login_icon_password"
+            android:hint="@string/loginPass"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="忘记密码 >>"
+            android:id="@+id/loginForgetPass"
+            android:layout_below="@+id/loginPass"
+            android:layout_alignRight="@+id/loginPass"
+            android:layout_alignEnd="@+id/loginPass" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:text="@string/loginLoginBtn"
+            android:id="@+id/loginBtn"
+            android:layout_below="@+id/loginForgetPass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/login_btn_selector"
+            android:textColor="#ffffff"
+            android:enabled="true"
+            android:shadowColor="#7f000000"
+            android:shadowDx="0.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="10"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="QQ账号登录"
+                android:id="@+id/button"
+                android:layout_weight="5"
+                android:textSize="8pt"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/third_login_btn_selector"
+                android:drawableLeft="@drawable/login_icon_qq"
+                android:textColor="#b2abae"
+                android:editable="true"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="新浪微博登录"
+                android:textSize="8pt"
+                android:id="@+id/button2"
+                android:layout_weight="5"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/third_login_btn_selector"
+                android:drawableLeft="@drawable/login_icon_sina"
+                android:textColor="#b2abae"
+                android:editable="true"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_below="@+id/loginNM"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
